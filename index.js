@@ -5,7 +5,7 @@
 let date = ("Monday 2019-03-18");
 let time = ("10:05:34 AM");
 const input = require("readline-sync");
-let astronautCount = input.question("How many astronauts are on board? ");
+let astronautCount = Number(input.question("How many astronauts are on board? "));
 let astronautStatus = ("ready");
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg;
@@ -25,7 +25,7 @@ console.log("------------------------------------------","\n","> LC04 - LAUNCH C
 "-----------------------------------------","\n",
 "> ASTRONAUT INFO","\n",
 "-----------------------------------------","\n",
-"* count:",Number(astronautCount),"\n",
+"* count:",astronautCount,"\n",
 "* status:",astronautStatus,"\n",
 "\n",
 "-----------------------------------------","\n",
